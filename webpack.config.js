@@ -106,6 +106,7 @@ module.exports = (env, argv) => ({
       They can apply loaders to the module, or modify the parser.
     */
     rules: [
+      
       /*
         http://bit.ly/2KjZb3S
         A Rule can be separated into three parts — Conditions, Results and nested Rules.
@@ -218,6 +219,18 @@ module.exports = (env, argv) => ({
         * Extract CSS from JS bundle => separate asset
         * Asset => <link> in index.html
       */
+        {
+          test: /\.(woff|woff2|eot|ttf|otf)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'fonts/' // Change this path as needed
+              }
+            }
+          ]
+        },
       {
         test: /\.(scss|css)$/,
         include: path.resolve(__dirname, 'src'),

@@ -18,11 +18,17 @@ import ReactDOM from 'react-dom'
 // Import our top-level component.
 import App from 'components/App'
 import Navbar from './Navbar/Navbar'
+import Footer from './Footer/Footer'
+import Body from './Body/Body'
+import Searchbar from './Searchbar/Searchbar'
 
 // Mount our app.
 ReactDOM.render(
   <React.StrictMode>
   <Navbar/>
+  <Searchbar/>
+  <Body/>
+  <Footer/>
   </React.StrictMode>,
   document.querySelector('#app'),
 )

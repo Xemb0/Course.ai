@@ -1,0 +1,32 @@
+.Searchbar {
+    height: 80vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 50px; /* Make it round */
+    width: 300px; /* Set the desired width */
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-button {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 50px; /* Make it round */
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .search-button i {
+    color: #fff;
+  }
+  

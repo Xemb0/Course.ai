@@ -12,6 +12,8 @@ function Navbar() {
             <li>About</li>
         </ul>
     </div>
+
+
 </div>
   )
 }
