@@ -21,6 +21,7 @@ import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
 import Body from './Body/Body'
 import Searchbar from './Searchbar/Searchbar'
+import Popular from './Popular/Popular'
 
 // Mount our app.
 ReactDOM.render(
@@ -28,6 +29,7 @@ ReactDOM.render(
   <Navbar/>
   <Searchbar/>
   <Body/>
+  <Popular/>
   <Footer/>
   </React.StrictMode>,
   document.querySelector('#app'),

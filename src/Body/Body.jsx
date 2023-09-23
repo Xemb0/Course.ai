@@ -75,6 +75,18 @@ function Body() {
           <button>Enroll Now</button>
         </div>
       </div>
+      <div className="container">
+        <div className="left-section">
+          <h3>Course for Beginners</h3>
+          <p>
+            Get started with coding today! Our beginner-friendly courses are designed to help you learn coding from scratch.
+          </p>
+          <button>Enroll Now</button>
+        </div>
+        <div className="right-section">
+          <img src="your-image-url.jpg" alt="Coding" />
+        </div>
+      </div>
     </div>
   );
 }

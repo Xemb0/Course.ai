@@ -1,7 +1,10 @@
 /* Body.css */
 
 /* Add any global styles or resets here */
+*{
 
+    /* outline: 3px solid red; */
+}
 .Body {
     text-align: center;
     padding: 20px;
@@ -46,38 +49,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem; /* Adjust as needed for margins */
+    padding: 2rem; 
   }
   
   .left-section {
+    text-align: center;
     flex: 1;
-    padding-right: 20px;
-  }
-  
-  .left-section img {
+    padding: 1rem;
+}
+
+.left-section img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-  }
-  
-  .right-section {
-    flex: 2;
-    text-align: center;
-  }
-  
-  .right-section h3 {
+}
+
+.right-section {
+    flex: 1;
+    /* text-align: center; */
+}
+
+.right-section h3 {
     font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .right-section p {
-    font-size: 16px;
-  }
-  
-  .right-section button {
+    margin-bottom: 1rem;
+
+}
+
+.right-section p {
+    font-size: 16px; /* Adjust as needed */
+    margin-bottom: 1rem; /* Adjust as needed for spacing */
+}
+
+.right-section button {
+      /* outline: 4px solid green; */
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -91,5 +96,58 @@
     background-color: #0056b3;
   }
   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Add styles for other sections as needed */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem; /* Adjust as needed for margins */
+    padding: 2rem; /* Adjust as needed for padding */
+}
+
+.left-section {
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+.left-section h3 {
+    font-size: 24px; /* Adjust as needed */
+    margin-bottom: 1rem; /* Adjust as needed for spacing */
+}
+
+.left-section p {
+    font-size: 16px; /* Adjust as needed */
+    margin-bottom: 1rem; /* Adjust as needed for spacing */
+}
+
+.left-section button {
+    background-color: #007bff; /* Adjust as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Adjust as needed for button size */
+    cursor: pointer;
+    font-size: 16px; /* Adjust as needed for button text size */
+}
+
+.right-section {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.right-section img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
   /* Add more styles or adjust as needed */
   
