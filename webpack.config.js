@@ -106,7 +106,6 @@ module.exports = (env, argv) => ({
       They can apply loaders to the module, or modify the parser.
     */
     rules: [
-      
       /*
         http://bit.ly/2KjZb3S
         A Rule can be separated into three parts — Conditions, Results and nested Rules.
@@ -219,18 +218,6 @@ module.exports = (env, argv) => ({
         * Extract CSS from JS bundle => separate asset
         * Asset => <link> in index.html
       */
-        {
-          test: /\.(woff|woff2|eot|ttf|otf)$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[ext]',
-                outputPath: 'fonts/' // Change this path as needed
-              }
-            }
-          ]
-        },
       {
         test: /\.(scss|css)$/,
         include: path.resolve(__dirname, 'src'),
@@ -441,7 +428,6 @@ module.exports = (env, argv) => ({
       This is only necessary if you want to serve static files.
       Content not served from Webpack's devServer is served from here.
     */
-    contentBase: path.resolve(__dirname, 'dist'),
 
     /*
       http://bit.ly/2WFe8nS
@@ -470,7 +456,7 @@ module.exports = (env, argv) => ({
       http://bit.ly/2WIXOSV, http://bit.ly/2WDMWpv
       Nobody wants to see 0.0.0.0 in the browser. This get's rid of that.
     */
-    public: `http://localhost:${DEV_SERVER_PORT}`,
+
 
     /*
       http://bit.ly/2XlEOXN
@@ -505,23 +491,18 @@ module.exports = (env, argv) => ({
       : {},
 
     // https://bit.ly/3nM4mL0
-    watchContentBase: true,
 
     // https://bit.ly/2WQBndb
     hot: true,
 
     // https://bit.ly/3mIacvB
-    inline: true,
 
     /*
       https://bit.ly/37EzOVO
       We disable both of these because the ReactRefresh plugin will put a
       verbose error on the screen showing where the error occured.
     */
-    overlay: {
-      warnings: false,
-      errors: false,
-    },
+
   },
 
   /*

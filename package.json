@@ -31,7 +31,7 @@
     "cross-env": "^7.0.3",
     "css-declaration-sorter": "^6.4.1",
     "css-loader": "^5.2.7",
-    "cssnano": "^4.1.11",
+    "cssnano": "^6.0.1",
     "dotenv": "^8.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
@@ -50,15 +50,19 @@
     "sassyons": "^4.2.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.4.4",
     "webpack": "^5.88.2",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production --env prod",
     "start": "cross-env NODE_ENV=development webpack serve --mode development --progress"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "font-awesome": "^4.7.0",
+    "react-router-dom": "^6.16.0"
   }
 }

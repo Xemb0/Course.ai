@@ -4,16 +4,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 12rem;
   }
   
   .search-input {
     padding: 10px;
     border: none;
     border-radius: 50px; /* Make it round */
-    width: 300px; /* Set the desired width */
+    width: 50%; /* Set the desired width */
     font-size: 16px;
     outline: none;
+    outline: 2px solid black;
   }
   
   .search-button {

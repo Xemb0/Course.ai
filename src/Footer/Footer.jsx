@@ -1,22 +1,34 @@
 import React from 'react';
 import './Footer.css'; // Replace with the correct path to your CSS file
-
+import logo from '../assets/img/icon.png'
 
 function Footer() {
   return (
     <div>
       <div className='Footer_box'>
         <div className='Footer_col1'>
+          <img src={logo} alt="Logo" className="footer-logo" />
+          <h4>Contact Us</h4>
           <ul>
-            <li>Stuff</li>
-            {/* Add more list items as needed */}
+            <li>Email: example@example.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: 123 Main Street, City, Country</li>
           </ul>
         </div>
         <div className='Footer_col2'>
-          {/* Add content for the second column */}
+          <h4>About Us</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eu enim suscipit auctor. Fusce id luctus risus.
+          </p>
         </div>
         <div className='Footer_col3'>
-          {/* Add content for the third column */}
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
         </div>
       </div>
       <div className='Footer_row'>
@@ -38,7 +50,6 @@ function Footer() {
             <span><i className="fab fa-youtube"></i></span>
           </a>
         </div>
-
       </div>
     </div>
   );
