@@ -1,46 +1,40 @@
 * {
     margin: 0;
-    /* outline: 2px solid red; */
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-
-
 .logo {
     max-width: 10%;
+    max-height: 10%;
+    overflow: hidden;
+}
 
-    max-height: 10%; /* Set a maximum width for the logo container */
-    overflow: hidden; /* Hide content that exceeds the container's width */
-  }
-  
-  .logo img {
+.logo img {
     margin: auto;
-    width: 100%; /* Make the image inside the logo container responsive */
+    width: 100%;
     height: auto;
-    /* object-fit: fill; Maintain the image's aspect ratio */
-  }
+}
 
-  .SignUp img {
+.SignUp img {
     margin: auto;
-    width: 50%; /* Make the image inside the logo container responsive */
+    width: 50%;
     height: auto;
+}
 
-  }
 .Container {
-    /* outline: 2px solid red; */
     width: 100%;
     height: 10%;
     margin-top: 1rem;
     background-color: rgba(250, 235, 215, 0);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .Navbar {
     display: flex;
-    /* outline: 2px solid green; */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
     box-shadow: 0 5px 5px -5px black;
     border-radius: 50px;
     background-color: rgb(255, 240, 240);
@@ -50,6 +44,8 @@
 .Nav_ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin-left: auto; /* Push the list to the right */
 }
 
 li {
@@ -57,7 +53,7 @@ li {
     cursor: pointer;
     padding: 13px 35px;
     position: relative;
-    z-index: 1; /* Add this line */
+    z-index: 1;
 }
 
 li::after {
@@ -72,7 +68,7 @@ li::after {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: top 0.5s, opacity 0.5s;
-    z-index: -1; /* Add this line */
+    z-index: -1;
 }
 
 li:hover {
@@ -84,38 +80,43 @@ li:hover::after {
     opacity: 1;
 }
 
-
-
-.SignUp{
-    /* outline: 3px solid green; */
+.SignUp {
     margin-right: 1rem;
-    /* margin-left: 12rem; */
-    float: right;
     max-width: 10%;
-
-    max-height: 10%; /* Set a maximum width for the logo container */
-    overflow: hidden; 
+    max-height: 10%;
+    overflow: hidden;
 }
 
 .SignUp .icon {
-    /* position: relative; */
     background-color: #e3e3e3c5;
     border-radius: 60%;
     display: flex;
-    float: right;
     margin: 1rem;
     width: 3rem;
     height: 3rem;
     line-height: 3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
     font-size: 2rem;
-    /* display: inline-block; */
-  
     cursor: pointer;
-    /* transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
     color: #333;
-  }
-  
+}
 
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem; /* Add spacing between items */
+    }
 
+    .Nav_ul {
+        margin-left: 0;
+        margin-top: 1rem; /* Add spacing between items */
+    }
+
+    li {
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+}

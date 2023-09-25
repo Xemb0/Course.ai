@@ -21,43 +21,35 @@ function Body() {
             <div className="icon">
             <img className='category-icon' src={android} alt="android" />
             </div>
-            <div className="category-title">Category 1</div>
-            <p>Description of Category 1</p>
+            <div className="category-title">Android development</div>
           </div>
           <div className="category">
           <img className='category-icon' src={web} alt="android" />
-            <div className="category-title">Category 2</div>
-            <p>Description of Category 2</p>
+            <div className="category-title">Web development</div>
           </div>
           <div className="category">
           <img className='category-icon' src={react} alt="android" />
-            <div className="category-title">Category 3</div>
-            <p>Description of Category 3</p>
+            <div className="category-title">React</div>
           </div>
           <div className="category">
           <img className='category-icon' src={ai} alt="android" />
-            <div className="category-title">Category 4</div>
-            <p>Description of Category 4</p>
+            <div className="category-title">Artificial Intelligence</div>
           </div>
           <div className="category">
           <img className='category-icon' src={digital} alt="android" />
-            <div className="category-title">Category 5</div>
-            <p>Description of Category 5</p>
+            <div className="category-title">Degital Marketing</div>
           </div>
           <div className="category">
           <img className='category-icon' src={web} alt="android" />
-            <div className="category-title">Category 6</div>
-            <p>Description of Category 6</p>
+            <div className="category-title">social</div>
           </div>
           <div className="category">
           <img className='category-icon' src={robotic} alt="android" />
-            <div className="category-title">Category 7</div>
-            <p>Description of Category 7</p>
+            <div className="category-title">Technology</div>
           </div>
           <div className="category">
           <img className='category-icon' src={maths} alt="android" />
-            <div className="category-title">Category 8</div>
-            <p>Description of Category 8</p>
+            <div className="category-title">Mathmatics</div>
           </div>
         </div>
       </div>

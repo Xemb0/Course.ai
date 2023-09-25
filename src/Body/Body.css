@@ -1,9 +1,13 @@
 /* Body.css */
 
 /* Add any global styles or resets here */
-*{
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
+
 .Body {
   text-align: center;
   padding: 20px;
@@ -13,7 +17,7 @@ h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-  
+
 .category-container {
   display: flex;
   flex-wrap: wrap;
@@ -21,35 +25,31 @@ h2 {
 }
 
 .category {
-  
-  width: 15rem;
-  height: 15rem;
-    margin: 20px;
-    
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .category-icon {
-    font-size: 36px;
-    margin: auto;
-    width: 70%; /* Make the image inside the logo container responsive */
-    height: auto;
-    color: #007bff;
-     /* Change the icon color */
-    }
-    
-    
-    .category-title {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    
-    /* Add this to your Body.css */
+  flex: 1;
+  min-width: calc(33.33% - 40px); /* Adjust the width as needed for responsiveness */
+  max-width: calc(33.33% - 40px); /* Adjust the width as needed for responsiveness */
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+  font-size: 36px;
+  margin: auto;
+  width: 70%;
+  height: auto;
+  color: #007bff;
+}
+
+.category-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 /* Center align the .enrollnow container */
 .enrollnow {
   display: flex;
@@ -59,10 +59,13 @@ h2 {
 }
 
 /* Style for each .container */
-.container {
+.container,
+.container2 {
   outline: 3px solid red;
   display: flex;
-  align-items: center; /* Vertically center align items */
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed for spacing */
+  align-items: center;
   margin: 20px;
   max-width: 90%; /* Adjust as needed */
   background-color: #fff;
@@ -71,26 +74,10 @@ h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container2 {
-  display: flex;
-  outline: 3px solid red;
-  /* justify-content: space-between; */
-  align-items: center; /* Vertically center align items */
-  /* margin: 20px; */
-  
-  max-width: 90%; /* Adjust as needed */
-  
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 /* Style for .img-section */
 .img-section {
-  flex: 1; /* Take up half of the container's width */
+  flex: 1;
   text-align: center;
-  /* padding: 20px; */
-
   outline: 3px solid red;
 }
 
@@ -99,22 +86,22 @@ h2 {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
-  /* margin: 1rem; */
 }
+
 /* Style for .text-section */
 .text-section {
   outline: 3px solid red;
   margin: 1rem;
-  flex: 1; /* Take up half of the container's width */
+  flex: 1;
   text-align: center;
   padding: 1rem;
 }
+
 /* Increase the font size of h3 in .text-section */
 .text-section h3 {
   margin: 1rem;
   font-size: 2rem; /* Adjust the size to your preference, for example, 2.5rem */
 }
-
 
 /* Style for buttons */
 button {
@@ -131,8 +118,32 @@ button {
 
 button:hover {
   background-color: #0056b3;
-  transform: scale(1.2 );
+  transform: scale(1.2);
 }
 
-  /* Add more styles or adjust as needed */
-  
+.category-title {
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgba(0, 0, 0, 0.676); /* Make the text transparent */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow with a blur effect to create thickness and fade */
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for screens smaller than 768px width */
+  .category {
+    flex: 1;
+    min-width: calc(50% - 40px); /* Adjust the width for responsiveness */
+    max-width: calc(50% - 40px); /* Adjust the width for responsiveness */
+  }
+  .category-title {
+    font-size: 1rem;
+    color: transparent; /* Make the text transparent */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow with a blur effect to create thickness and fade */
+}
+
+
+  .container,
+  .container2 {
+    flex-direction: column; /* Stack elements vertically */
+  }
+}
